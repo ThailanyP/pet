@@ -8,10 +8,20 @@
     <link rel="shortcut icon" href="imagens/1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- JQUERY -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/menu.css">
+
+    <style>
+      .row{
+        display: flex;
+      }
+    </style>
 </head>
+
 <body>
     <!-- topo -->
   <div id="topo">
@@ -39,67 +49,91 @@
       </nav>
   
   <!-- /menu -->
+    <div class="container">
+        <h1 class="text-center">Agendamento</h1>
+        <h5 class="text-center">Marque um horário para seu Aumigo</h5>
+        <div class="row">
+          <form class="row col-6 border mt-4 mb-5">
 
-  <input id="date" type="date">
-  <form class="row col-6 border">
-    <legend>Dados Pessoais</legend>
-    <div class="col-md-6">
-        <label for="nome" class="form-label">Nome*</label>
-        <input type="text" class="form-control" id="nome" name="nome"  placeholder="nome" required>
+            <legend class="mt-1">Dados Pessoais</legend>
+            <div class="col-md-6">
+                <label for="nome" class="form-label">Nome*</label>
+                <input type="text" class="form-control" id="nome" name="nome"  placeholder="nome" required>
+            </div>
+    
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email*</label>
+                <input type="email" class="form-control" id="email" name="email"  placeholder="email@email.com" required>
+            </div>
+    
+            <div class="col-4">
+                <label class="form-label" for="nascimento">Data de nascimento</label>
+                <input type="date" class="form-control" name="nascimento" id="nascimento" >
+            </div>
+            
+            <legend class="mt-1">Dados do Aumigo</legend>
+            <div class="col-md-6">
+              <label for="nome" class="form-label">Nome do Pet</label>
+              <input type="text" class="form-control" id="nome" name="nome"  placeholder="nome" required>
+            </div>
+            <div class="col-md-6">
+              <label for="nome" class="form-label">Raça</label>
+              <input type="text" class="form-control" placeholder="Golden" required>
+            </div>
+    
+            <legend class="mt-1">Endereço</legend>
+    
+            <div class="col-md-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="tel" class="form-control" id="cep" name="cep"  placeholder="12345-000" >
+            </div>
+    
+            <div class="col-6">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" name="endereco" placeholder="av.paulista"disabled>
+            </div>
+    
+            <div class="col-3">
+                <label for="numero" class="form-label">Nº</label>
+                <input type="text" class="form-control" id="numero" name="numero"  placeholder="1234" disabled >
+            </div>
+            <div class="col-2">
+                <label for="complemento" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="complemento" name="complemento"  placeholder="apt.32" disabled>
+            </div>
+    
+            <div class="col-4" style="text-align: center;">
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="bairro" name="bairro" placeholder="paulista"> 
+            </div>
+    
+            <div class="col-md-4">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade" name="cidade"  placeholder="São Paulo"  >
+            </div>
+    
+            <div class="col-md-2">
+                <label for="estado" class="form-label">UF</label>
+                <input type="text" class="form-control" name="uf" id="uf"  placeholder="SP" >
+            </div>
+    
+            <div class="col-12 mt-2 mb-2">
+                <input type="submit"  class="btn btn-primary " value="enviar" name="btnenviar" id="btnenviar"></input>
+            </div>
+    
+          </form>
+    
+          <div class="col-6">
+            <video   autoplay muted loop style=" height: 80vh !important;
+            margin-left: 51px;
+            width: 100% !important;
+            margin-top: 50px;">
+              <source src="imagens/cao2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+  
     </div>
-
-    <div class="col-md-6">
-        <label for="email" class="form-label">Email*</label>
-        <input type="email" class="form-control" id="email" name="email"  placeholder="email@email.com" required>
-    </div>
-
-    <div class="col-4">
-        <label class="form-label" for="nascimento">Data de nascimento</label>
-        <input type="date" class="form-control" name="nascimento" id="nascimento" 
-        max="" >
-    </div>
-
-    <legend>Endereço</legend>
-
-    <div class="col-md-2">
-        <label for="cep" class="form-label">CEP</label>
-        <input type="tel" class="form-control" id="cep" name="cep"  placeholder="12345-000" >
-    </div>
-
-    <div class="col-6">
-        <label for="endereco" class="form-label">Endereço</label>
-        <input type="text" class="form-control" id="endereco" name="endereco" placeholder="av.paulista"disabled>
-    </div>
-
-    <div class="col-2">
-        <label for="numero" class="form-label">Nº</label>
-        <input type="text" class="form-control" id="numero" name="numero"  placeholder="1234" disabled >
-    </div>
-    <div class="col-2">
-        <label for="complemento" class="form-label">Complemento</label>
-        <input type="text" class="form-control" id="complemento" name="complemento"  placeholder="apt.32" disabled>
-    </div>
-
-    <div class="col-5">
-        <label for="bairro" class="form-label">Bairro</label>
-        <input type="text" class="form-control" id="bairro" name="bairro" placeholder="paulista"> 
-    </div>
-
-    <div class="col-md-5">
-        <label for="cidade" class="form-label">Cidade</label>
-        <input type="text" class="form-control" id="cidade" name="cidade"  placeholder="São Paulo"  >
-    </div>
-
-    <div class="col-md-2">
-        <label for="estado" class="form-label">UF</label>
-        <input type="text" class="form-control" name="uf" id="uf"  placeholder="SP" >
-    </div>
-
-    <div class="col-12 mb-2">
-        <input type="submit"  class="btn btn-primary " value="enviar" name="btnenviar" id="btnenviar"></input>
-    </div>
-
-</form>
 
     <!--  rodape-->
     <footer>
@@ -136,4 +170,31 @@
   <!--  rodape-->
     
 </body>
+<script></script> </script>
+<script src="busca_endereco_cep.js">
+    // validação cep e numero
+    $('#cep').blur(function (e) { 
+        e.preventDefault();
+        let cep = $(this).val();
+
+        if (cep == '') {
+            $('#btncadastrar').addClass('disabled');
+         }
+    });
+
+    $('#numero').blur(function (e) { 
+        e.preventDefault();
+         let numero = $(this).val();
+
+         if (numero == '') {
+            $('#btncadastrar').addClass('disabled');
+         } else{
+             $('#btncadastrar').removeClass('disabled');
+         }
+       
+          
+    });
+    // validação cep e numero
+    
+</script>
 </html>
