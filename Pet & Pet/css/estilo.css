@@ -1,0 +1,137 @@
+.body{
+    background-color: #efefef;
+}
+
+/* tppo */
+#topo{
+    background-color:black ;
+    display: flex;
+}
+#redes{
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.801);;
+    margin-left: 65%;
+}
+#info{
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.801);
+    margin-left:20px ;
+   
+}
+
+/* menu */
+
+#logo{
+	height: 75px;
+}
+	#logo img{
+		height: 70%;
+	}
+#menu{
+    margin-top: 10px; 
+	min-height: 100px;
+}
+#menu nav ul li a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+}
+
+#menu nav ul li a:hover {
+    text-decoration: overline;
+	color: #ffc107;
+}
+
+.bg-light {
+    --bs-bg-opacity: 0!important;
+}
+
+/* banner */
+header {
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: url("../imagens/cachorros.jpg") no-repeat;
+}
+
+#pa{
+    position: absolute;
+}
+
+#Bemvindo{
+    color: #ffc107;
+    width: 100%;
+	text-align: center;
+    margin-top: 20%;
+    -webkit-text-stroke: 1px #000000;
+    -webkit-text-stro: 1px #000000;
+}
+
+/* sobre ecompre */
+
+
+/* Time */
+.member {
+	width: 344px;
+    height: 427px;
+	margin-left: 25px;
+    margin-bottom: 30px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* RODAPÉ */
+footer {
+    color: #cccccc;
+    background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	/* width: 100%; */
+}
+footer ul{
+	list-style-type: none;
+}
+footer a{
+	text-decoration: none;
+	color: #cccccc;
+}
+footer a:hover{
+	text-decoration: overline;
+	color: #fddf58;
+}
+#m{
+	margin-left: 20% ;
+}
+#me{
+	margin-left: 34%;
+}
+#sp{
+	margin-left: 20% ;
+	text-align: start;
+}
+#fc{
+	margin-left: 20% ;
+}
+
+
+
+/* contato */
+#add{
+	display: flex;
+}
+
+#cont{
+    display: flex;
+    margin-left: 27px;
+    flex-direction: column;
+}
+#add2{
+    margin: 25px;
+}
+#conteu2{
+    margin-left: 60px;
+}

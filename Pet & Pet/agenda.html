@@ -5,196 +5,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda</title>
-    <link rel="shortcut icon" href="imagens/1.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<!-- JQUERY -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- JQUERY -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/menu.css">
+   
+    <!-- Font awesome -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-      .row{
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+  <!-- css local -->
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+     <style>
+
+      .container{
         display: flex;
       }
-    </style>
-</head>
-
-<body>
-    <!-- topo -->
-  <div id="topo">
-    <span>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-youtube"></i>
-    </span>
-      <p><i class="fa-solid fa-envelope"></i> exemplo@gmail.com</p>
-      <p><i class="fa-solid fa-phone"></i> (11) 91234-5678</p>
-  </div>
-  <!-- /topo -->
-
-  <!-- menu -->
-      <nav>  
-        <a href="home.html"><img id="logo" src="imagens/1.png" alt="" width="50" height="35"></a>  
-         <ul> 
-          <li> <a href="home.html">Home</a> </li>
-          <li><a href="shop.html"> Shop </a> </li>
-          <li><a href="agenda.html"> Agenda </a> </li>
-          <li><a href="adocao.html"> Adoção </a> </li>
-          <li><a href="contato.html"> Contato</a></li>
-        </ul>
-      </nav>
+      #pa{
+        position: inherit;
+      }
   
-  <!-- /menu -->
-    <div class="container">
-        <h1 class="text-center">Agendamento</h1>
-        <h5 class="text-center">Marque um horário para seu Aumigo</h5>
-        <div class="row">
-          <form class="row col-6 border mt-4 mb-5">
+    
+     </style>
+</head>
+<body>
+  <div class="container-fluid">
 
-            <legend class="mt-1">Dados Pessoais</legend>
-            <div class="col-md-6">
-                <label for="nome" class="form-label">Nome*</label>
-                <input type="text" class="form-control" id="nome" name="nome"  placeholder="nome" required>
-            </div>
+    <div class="row">
+      <div id="topo">
+        <span id="redes">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </span>
+          <p id="info"><i class="fa-solid fa-envelope"></i> exemplo@gmail.com  <i class="fa-solid fa-phone"></i> (11) 91234-5678</p>
+          
+      </div>
+    </div>
+		<div  class="row">
+			 <div id="pa" class="row">
+          <!-- <div id="logo" class="col-sm-2 col-4">
+            <img src="imagens/1.png" alt="Logo Pata" title="Logo Pata">
+          </div> -->
     
-            <div class="col-md-6">
-                <label for="email" class="form-label">Email*</label>
-                <input type="email" class="form-control" id="email" name="email"  placeholder="email@email.com" required>
-            </div>
-    
-            <div class="col-4">
-                <label class="form-label" for="nascimento">Data de nascimento</label>
-                <input type="date" class="form-control" name="nascimento" id="nascimento" >
-            </div>
+          <div id="menu" class="col-sm-8  col-8">
             
-            <legend class="mt-1">Dados do Aumigo</legend>
-            <div class="col-md-6">
-              <label for="nome" class="form-label">Nome do Pet</label>
-              <input type="text" class="form-control" id="nome" name="nome"  placeholder="nome" required>
-            </div>
-            <div class="col-md-6">
-              <label for="nome" class="form-label">Raça</label>
-              <input type="text" class="form-control" placeholder="Golden" required>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div id="menures" class="container-fluid">
+              <a href="home.html"><img id="logo" src="imagens/1.png" alt="Logo Pata" title="Logo Pata"></a>
+     
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation" style=" margin-left: 70%;">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
     
-            <legend class="mt-1">Endereço</legend>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
     
-            <div class="col-md-3">
-                <label for="cep" class="form-label">CEP</label>
-                <input type="tel" class="form-control" id="cep" name="cep"  placeholder="12345-000" >
-            </div>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link " href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="adocao.html">Agenda</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="contato.html"> Contato</a>
+                    </li>
     
-            <div class="col-6">
-                <label for="endereco" class="form-label">Endereço</label>
-                <input type="text" class="form-control" id="endereco" name="endereco" placeholder="av.paulista"disabled>
-            </div>
+                    <li class="nav-item">
+                      <a class="nav-link" href="adocao.html"> Adoção</a>
+                    </li>
+              </div>
+              </div>
+            </nav>
     
-            <div class="col-3">
-                <label for="numero" class="form-label">Nº</label>
-                <input type="text" class="form-control" id="numero" name="numero"  placeholder="1234" disabled >
-            </div>
-            <div class="col-2">
-                <label for="complemento" class="form-label">Complemento</label>
-                <input type="text" class="form-control" id="complemento" name="complemento"  placeholder="apt.32" disabled>
-            </div>
-    
-            <div class="col-4" style="text-align: center;">
-                <label for="bairro" class="form-label">Bairro</label>
-                <input type="text" class="form-control" id="bairro" name="bairro" placeholder="paulista"> 
-            </div>
-    
-            <div class="col-md-4">
-                <label for="cidade" class="form-label">Cidade</label>
-                <input type="text" class="form-control" id="cidade" name="cidade"  placeholder="São Paulo"  >
-            </div>
-    
-            <div class="col-md-2">
-                <label for="estado" class="form-label">UF</label>
-                <input type="text" class="form-control" name="uf" id="uf"  placeholder="SP" >
-            </div>
-    
-            <div class="col-12 mt-2 mb-2">
-                <input type="submit"  class="btn btn-primary " value="enviar" name="btnenviar" id="btnenviar"></input>
-            </div>
-    
-          </form>
-    
-          <div class="col-6">
-            <video   autoplay muted loop style=" height: 80vh !important;
-            margin-left: 51px;
-            width: 100% !important;
-            margin-top: 50px;">
-              <source src="imagens/cao2.mp4" type="video/mp4">
-            </video>
-          </div>
+          </div> <!--fim do menu -->
+       </div>
+
+  </div>
+
+  
+
+
+      <!--  rodape-->
+      <footer >
+        <div class="col-md-2 d-none d-sm-block mt-2">
+          <h4 id="me">Menu</h4>
+          <ul id="m" > 
+            <li>
+              <a href="home.html">Home</a> 
+            </li>
+  
+            <li>
+              <a href="shop.html"> Shop </a> 
+            </li>
+  
+            <li>
+              <a href="agenda.html"> Agenda </a> 
+            </li>
+  
+            <li>
+              <a href="adocao.html"> Adoção </a> 
+            </li>
+  
+            <li>
+              <a href="contato.html"> Contato</a>
+            </li>
+          </ul>
         </div>
   
-    </div>
-
+        <div id="info2" class="col-md-5 col-sm-4 text-center text-sm-start mt-2">
+          <h4 id="sp">Sobre nós</h4>
+          <p id="sp">Nosso petshop sempre busca trazeros melhores produtos.
+            Pensando a todo momento no bem estar e felicidade de seu companheiro</p>
+        </div>
+        <div id="info2" class="col-md-5 c0l-sm-4 text-sm-start mt-2">
+          <h4 id="fc">Fale Conosco</h4>
+          <p  id="fc"><i class="fa-solid fa-envelope"></i> exemplo@gmail.com</p>
+          <p  id="fc"><i class="fa-solid fa-phone"></i> (11) 91234-5678</p>
+          <!-- <br> -->
+          <h5  id="fc">Endereço</h5>
+          <p  id="fc">Avenida Arroz com Feijão, 1234  - Purê, São Paulo- SP</p>
+        </div>
+        <div class="row mt-2">
+          <p class="text-center text-sm-end text-end col-sm-4 col-md-12">
+            &copy; 2023 PetShop Animal Feliz. Todos os direitos reservados.</p>
+        </div>
+        
+    </footer>
     <!--  rodape-->
-    <footer>
-      <div class="col-md-2 mt-2">
-        <h4 id="me">Menu</h4>
-        <ul id="m" > 
-          <li> <a href="home.html">Home</a> </li>
-          <li><a href="shop.html"> Shop </a> </li>
-          <li><a href="agenda.html"> Agenda </a> </li>
-          <li><a href="adocao.html"> Adoção </a> </li>
-          <li><a href="contato.html"> Contato</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-5 mt-2">
-        <h4 id="sp">Sobre nós</h4>
-        <p id="sp">Nosso petsho sempre busca trazeros melhores produtos.
-          Pensando a todo momento no bem estar e felicidade de seu companheiro</p>
-      </div>
-      <div class="col-md-5 mt-2">
-        <h4 id="fc">Fale Conosco</h4>
-        <p  id="fc"><i class="fa-solid fa-envelope"></i> exemplo@gmail.com</p>
-        <p  id="fc"><i class="fa-solid fa-phone"></i> (11) 91234-5678</p>
-        <!-- <br> -->
-        <h5  id="fc">Endereço</h5>
-        <p  id="fc">Avenida Arroz com Feijão, 1234  - Purê, São Paulo- SP</p>
-      </div>
-      <div class="row mt-2">
-        <p class="text-end">
-          &copy; 2023 PetShop Animal Feliz. Todos os direitos reservados.</p>
-      </div>
-      
-  </footer>
-  <!--  rodape-->
     
 </body>
-<script></script> </script>
-<script src="busca_endereco_cep.js">
-    // validação cep e numero
-    $('#cep').blur(function (e) { 
-        e.preventDefault();
-        let cep = $(this).val();
-
-        if (cep == '') {
-            $('#btncadastrar').addClass('disabled');
-         }
-    });
-
-    $('#numero').blur(function (e) { 
-        e.preventDefault();
-         let numero = $(this).val();
-
-         if (numero == '') {
-            $('#btncadastrar').addClass('disabled');
-         } else{
-             $('#btncadastrar').removeClass('disabled');
-         }
-       
-          
-    });
-    // validação cep e numero
-    
-</script>
 </html>

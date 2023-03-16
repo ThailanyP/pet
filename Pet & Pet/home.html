@@ -6,121 +6,223 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="shortcut icon" href="imagens/1.png" type="image/x-icon">
+
+  <!-- Font awesome -->
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+  <!-- css local -->
+
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/home.css">
-  <!-- <link rel="stylesheet" href="css/estilo.css"> -->
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
     
 </head>
 <body>
-  <!-- topo -->
-  <div id="topo">
-    <span>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-youtube"></i>
-    </span>
-      <p><i class="fa-solid fa-envelope"></i> exemplo@gmail.com</p>
-      <p><i class="fa-solid fa-phone"></i> (11) 91234-5678</p>
-  </div>
-  <!-- /topo -->
+	<div class="container-fluid">
+    <div class="row">
+      <div id="topo">
+        <span id="redes">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </span>
+          <p id="info"><i class="fa-solid fa-envelope"></i> exemplo@gmail.com  <i class="fa-solid fa-phone"></i> (11) 91234-5678</p>
+          
+      </div>
+    </div>
+		<div  class="row">
+			 <div id="pa" class="row">
+          <!-- <div id="logo" class="col-sm-2 col-4">
+            <img src="imagens/1.png" alt="Logo Pata" title="Logo Pata">
+          </div> -->
+    
+          <div id="menu" class="col-sm-8  col-8">
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div id="menures" class="container-fluid">
+              <a href="home.html"><img id="logo" src="imagens/1.png" alt="Logo Pata" title="Logo Pata"></a>
+    
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation" style=" margin-left: 70%;">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link " href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="adocao.html">Agenda</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="contato.html"> Contato</a>
+                    </li>
+    
+                    <li class="nav-item">
+                      <a class="nav-link" href="adocao.html"> Adoção</a>
+                    </li>
+              </div>
+              </div>
+            </nav>
+    
+          </div> <!--fim do menu -->
+       </div>
 
-  <!-- menu -->
+        <!-- banner -->
+        <header class="d-none d-sm-block">
+          <h1 id="Bemvindo">Bem-vindo ao Pet & Pet</h1>
+        </header>
+        <!-- /banner -->
+
+		</div> <!--fim do 1ºrow-->
+
+
+		<!-- linha 3 -->
+		<div class="col-12 text-center mt-5">
+			<h3> Sobre Nós</h3>
+			<h5>Nosso petshop sempre busca trazer os melhores produtos. <br> 
+        Pensando a todo momento no bem estar e felicidade de seu companheiro</h5>
+		</div>
+
+		<div class="container">
+      <div class="row oquefazemos text-center mt-5">
+        <h3 class="text-center mt-5"> Compre Conosco</h3>
   
-    <!-- <img src="imagens/cachorros.jpg" alt="" > -->
-      <nav>  
-        <a href="home.html"><img id="logo" src="imagens/1.png" alt="" width="50" height="35"></a>  
-         <ul> 
-          <li> <a href="home.html">Home</a> </li>
-          <li><a href="shop.html"> Shop </a> </li>
-          <li><a href="agenda.html"> Agenda </a> </li>
-          <li><a href="adocao.html"> Adoção </a> </li>
-          <li><a href="contato.html"> Contato</a></li>
-        </ul>
-      </nav>
+        <div class="col-sm-4">
+          <img src="imagens/c5.png" style="border-radius: 90%; height: 200px; width: 200px;">
+          <h5>Acessórios</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
   
-  <!-- /menu -->
+        <div class="col-sm-4">
+          <img src="imagens/racao.jpg" style="border-radius: 90%; height: 200px; width: 200px;">
+          <h5>Alimentação</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+  
+        <div class="col-sm-4">
+          <img src="imagens/cuidado.png" style="border-radius: 90%; height: 200px; width: 200px;">
+          <h5>Cuidados</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+  
+      </div>
+    </div>
 
-  <!-- banner -->
-  <header>
-		<h1>Bem-vindo ao Pet & Pet</h1>
-	</header>
-  <!-- /banner -->
+    <!-- TIME -->
 
-  <!-- sobre nos -->
-  <main></main>
-  <div id="sobre" class="row">
-    <h2>Sobre nós</h2>
-    <p> Nosso petshop sempre busca trazeros melhores produtos. <br> 
-      Pensando a todo momento no bem estar e felicidade de seu companheiro</p>
-  </div>
-  <!-- sobre nos -->
-  <!-- compra -->
-  <h2>Compre conosco</h2>
-  <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo 
-    accusamus vel fuga eum doloribus amet asperiores ratione minima illum 
-    iure aut est sapiente consequuntur, impedit nihil? Rem, architecto quo.</p>
-  <!-- compra -->
+		<div class="row chamadas p-2 p-sm-5 mt-sm-5 mb-sm-5">
 
-  <!--  time-->
-  <div class="container">
+      <h3 class="text-center">Nosso Time</h3>
+			<div class="col-sm-4 mb-3">
 
-      <h1>Nosso Time</h1>
+        <div class="member">
+          <img src="imagens/p1.png" alt="Pessoa Feliz" width="300" height="300">
+          <h3>Thailany</h3>
+          <p>CEO</p>
+        </div>
 
-    <div class="member">
-      <img src="imagens/p1.png" alt="Pessoa Feliz" width="300" height="200">
-      <h3>Thailany</h3>
-      <p>CEO</p>
-    </div>
-    <div class="member">
-      <img src="imagens/p2.png" alt="Pessoa Feliz" width="300" height="200">
-      <h3>Leonardo</h3>
-      <p>Vendedor</p>
-    </div>
-    <div class="member">
-      <img src="imagens/p3.png" alt="Pessoa Feliz" width="300" height="200">
-      <h3>Maria</h3>
-      <p>Adoção</p>
-    </div>
-    <div class="member">
-      <img src="imagens/p4.png" alt="Pessoa Feliz" width="300" height="200">
-      <h3>Valentine</h3>
-      <p>Recepcionista</p>
-    </div>
-    <div class="member">
-      <img src="imagens/p5.png" alt="Pessoa Feliz" width="300" height="200">
-      <h3>Giovanni</h3>
-      <p>Banhista e tosador</p>
-    </div>
-    <div class="member">
-      <img src="imagens/p6.png" alt="Pessoa Feliz" width="300" height="200">
-      <h3>Gabriela</h3>
-      <p>Veterinária</p>
-    </div>
-  </div>
-  <!--  time-->
-  <!--  rodape-->
-  <footer>
-      <div class="col-md-2 mt-2">
+			</div>
+
+			<div class="col-sm-4 mb-3">
+
+        <div class="member">
+          <img src="imagens/p2.png" alt="Pessoa Feliz" width="300" height="300">
+          <h3>Leonardo</h3>
+          <p>Vendedor</p>
+        </div>
+
+			</div>
+
+			<div class="col-sm-4 mb-3">
+
+        <div class="member">
+          <img src="imagens/p3.png" alt="Pessoa Feliz" width="300" height="300">
+          <h3>Maria</h3>
+          <p>Adoção</p>
+        </div>
+        
+			</div>
+			<div class="col-sm-4 mb-3">
+
+        <div class="member">
+          <img src="imagens/p4.png" alt="Pessoa Feliz" width="300" height="300">
+          <h3>Valentine</h3>
+          <p>Recepcionista</p>
+        </div>
+
+			</div>
+			<div class="col-sm-4 mb-3">
+
+        <div class="member">
+          <img src="imagens/p5.png" alt="Pessoa Feliz" width="300" height="300">
+          <h3>Giovanni</h3>
+          <p>Banhista e tosador</p>
+        </div>
+
+			</div>
+			<div class="col-sm-4 mb-3">
+
+        <div class="member">
+          <img src="imagens/p6.png" alt="Pessoa Feliz" width="300" height="300">
+          <h3>Gabriela</h3>
+          <p>Veterinária</p>
+        </div>
+
+			</div>
+
+		</div> <!--fim do 4ºrow-->
+	</div> <!-- fim da container-->
+    <!--  rodape-->
+    <footer >
+      <div class="col-md-2 d-none d-sm-block mt-2">
         <h4 id="me">Menu</h4>
         <ul id="m" > 
-          <li> <a href="home.html">Home</a> </li>
-          <li><a href="shop.html"> Shop </a> </li>
-          <li><a href="agenda.html"> Agenda </a> </li>
-          <li><a href="adocao.html"> Adoção </a> </li>
-          <li><a href="contato.html"> Contato</a></li>
+          <li>
+            <a href="home.html">Home</a> 
+          </li>
+
+          <li>
+            <a href="shop.html"> Shop </a> 
+          </li>
+
+          <li>
+            <a href="agenda.html"> Agenda </a> 
+          </li>
+
+          <li>
+            <a href="adocao.html"> Adoção </a> 
+          </li>
+
+          <li>
+            <a href="contato.html"> Contato</a>
+          </li>
         </ul>
       </div>
 
-      <div class="col-md-5 mt-2">
+      <div id="info2" class="col-md-5 col-sm-4 text-center text-sm-start mt-2">
         <h4 id="sp">Sobre nós</h4>
-        <p id="sp">Nosso petsho sempre busca trazeros melhores produtos.
+        <p id="sp">Nosso petshop sempre busca trazeros melhores produtos.
           Pensando a todo momento no bem estar e felicidade de seu companheiro</p>
       </div>
-      <div class="col-md-5 mt-2">
+      <div id="info2" class="col-md-5 c0l-sm-4 text-sm-start mt-2">
         <h4 id="fc">Fale Conosco</h4>
         <p  id="fc"><i class="fa-solid fa-envelope"></i> exemplo@gmail.com</p>
         <p  id="fc"><i class="fa-solid fa-phone"></i> (11) 91234-5678</p>
@@ -129,12 +231,12 @@
         <p  id="fc">Avenida Arroz com Feijão, 1234  - Purê, São Paulo- SP</p>
       </div>
       <div class="row mt-2">
-        <p class="text-end">
+        <p class="text-center text-sm-end text-end col-sm-4 col-md-12">
           &copy; 2023 PetShop Animal Feliz. Todos os direitos reservados.</p>
       </div>
       
   </footer>
   <!--  rodape-->
-  
 </body>
+
 </html>

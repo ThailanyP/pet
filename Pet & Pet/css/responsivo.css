@@ -1,0 +1,52 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #efefef;
+    }
+    /* topo */
+    #pa{
+        position: inherit;
+    }
+    #redes{
+        display: flex;
+        margin: 10px;
+    }
+    #info{
+        margin-left: 25%;
+        color: rgba(255, 255, 255, 0.801);;
+    }
+    #menures{
+        flex-wrap: nowrap;
+    }
+    /* menu */
+
+    /* sobre e compre */
+
+    /* time */
+
+    .member{
+        margin-left: 0px;
+    }
+
+   /* contato */
+
+    #conteudo{
+        padding: 8px;
+    }
+    #mapa{
+        padding: 3px;
+    }
+    
+#cont{
+    margin-left: 0px;
+}
+#add2{
+    margin: 6px;
+}
+#conteu2{
+    margin-left: 0px;
+}
+#info2{
+    margin-right: 58px;
+}
+
+  }
