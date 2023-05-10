@@ -1,4 +1,4 @@
-/* home */
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -8,3 +8,52 @@ footer {
     background-color: #343a40;
     color: #fff;
 }
+  
+  .member {
+    margin-bottom: 40px;
+  }
+  
+  .member img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+  /* .jumbotron{
+    background-color: #ffeb3bba;
+  } */
+  #banner {
+    background-image: url('../imagens/Banner\ Frete\ Grátis\ 3D\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    color: #202020; /* define a cor do texto para garantir contraste com a imagem */
+  }
+
+
+  /* loja */
+   #banner2 {
+    background-image: url('../imagens/banner4.png');
+    background-size: cover;
+    background-position: center;
+    color: #202020; /* define a cor do texto para garantir contraste com a imagem */
+    height: 65vh;
+  }
+   #banner3 {
+    background-image: url('../imagens/banner2.png');
+    background-size: cover;
+    background-position: center;
+    color: #202020; /* define a cor do texto para garantir contraste com a imagem */
+    height: 65vh;
+  }
+   #banner4 {
+    background-image: url('../imagens/Banner\ Frete\ Grátis\ 3D\ \(4\).png');
+    background-size: cover;
+    background-position: center;
+    color: #0b0b0b; /* define a cor do texto para garantir contraste com a imagem */
+  }
+  #banner4 p{
+   background-color: #ffffffe2;
+  }
+.fo{
+font-family: cursive;
+}
+
+  

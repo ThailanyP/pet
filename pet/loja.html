@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Loja - Nome do Petshop</title>
+	<title>Loja - La Luly</title>
 	<!-- Adicionando o CSS do Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Adicionando o arquivo de estilo personalizado -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +15,7 @@
 	<header>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Nome do Petshop</a>
+				<a class="navbar-brand fo" href="index.html"><img src="imagens/pawprint.png" alt="logo pata" width="40" height="40"> La Luly</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -41,53 +42,152 @@
 		</nav>
 	</header>
 	<main>
+		<div class="container mt-3"><section class="jumbotron text-center" id="banner2"></section></div>
 		<section class="container">
-			<h1>Nossa Loja</h1>
+			<h1>Nossa Loja <img src="imagens/bolsa-de-compras.png" alt="" width="60" height="60"></h1>
 			<p>Confira abaixo nossos produtos disponíveis:</p>
-			<div class="row">
+			<div class="mt-2 offset-md-5">
+				<div class="col-sm-12 col-md-4 col-lg-3">
+				  <form class="form-inline">
+						<div class="form-group mr-2">
+						<label class="form-label mr-2" for="categoria">Categoria:</label>
+						<select class="form-control" id="categoria">
+							<option value="">Todas as categorias</option>
+							<option value="racoes">Rações</option>
+							<option value="brinquedos">Brinquedos</option>
+							<option value="coleiras">Coleiras</option>
+						</select>
+						<label class=" m-1 form-label mr-2" for="preco">Preço:</label>
+						<select class="form-control" id="preco">
+							<option value="">Todos os preços</option>
+							<option value="0-50">Até R$50,00</option>
+							<option value="50-100">R$50,00 - R$100,00</option>
+							<option value="100-200">R$100,00 - R$200,00</option>
+							<option value="200+">Acima de R$200,00</option>
+						</select>
+						<button class="btn btn-secondary m-1" type="submit">Filtrar</button>
+						</div>
+					</form>
+				</div>
+			  </div>
+			<div class="row mt-3">
 				<div class="col-md-4">
 					<div class="card">
-						<img src="https://via.placeholder.com/350x200" alt="Ração para cães">
+						<img src="imagens/caa.png" alt="Ração para cães">
 						<div class="card-body">
 							<h5 class="card-title">Ração para cães</h5>
-							<p class="card-text">Descrição da ração para cães.</p>
+							<p class="card-text">Uma alimentação completa e balanceada com ingredientes de alta qualidade. </p>
 							<p class="card-text"><strong>R$ 50,00</strong></p>
-							<a href="#" class="btn btn-primary">Comprar</a>
+							<a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>Comprar</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="card">
-						<img src="https://via.placeholder.com/350x200" alt="Ração para gatos">
+						<img src="imagens/corgo coabo.png" alt="Ração para cães">
 						<div class="card-body">
-							<h5 class="card-title">Ração para gatos</h5>
-							<p class="card-text">Descrição da ração para gatos.</p>
-							<p class="card-text"><strong>R$ 40,00</strong></p>
-							<a href="#" class="btn btn-primary">Comprar</a>
+							<h5 class="card-title">Ração para cães</h5>
+							<p class="card-text">Uma alimentação completa e balanceada com ingredientes de alta qualidade. </p>
+							<p class="card-text"><strong>R$ 50,00</strong></p>
+							<a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>Comprar</a>
 						</div>
 					</div>
 				</div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/350x200" alt="Brinquedo para pets">
-                        <div class="card-body">
-                            <h5 class="card-title">Brinquedo para pets</h5>
-                            <p class="card-text">Descrição do brinquedo para pets.</p>
-                            <p class="card-text"><strong>R$ 20,00</strong></p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-            </div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="imagens/crabs.png" alt="Ração para cães">
+						<div class="card-body">
+							<h5 class="card-title">Ração para cães</h5>
+							<p class="card-text">Uma alimentação completa e balanceada com ingredientes de alta qualidade. </p>
+							<p class="card-text"><strong>R$ 50,00</strong></p>
+							<a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>Comprar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-4">
+					<div class="card">
+						<img src="imagens/gassa.png" alt="Ração para cães">
+						<div class="card-body">
+							<h5 class="card-title">Ração para cães</h5>
+							<p class="card-text">Uma alimentação completa e balanceada com ingredientes de alta qualidade. </p>
+							<p class="card-text"><strong>R$ 50,00</strong></p>
+							<a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="imagens/graza.png" alt="Ração para cães">
+						<div class="card-body">
+							<h5 class="card-title">Ração para cães</h5>
+							<p class="card-text">Uma alimentação completa e balanceada com ingredientes de alta qualidade. </p>
+							<p class="card-text"><strong>R$ 50,00</strong></p>
+							<a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="imagens/maccoo.png" alt="Ração para cães">
+						<div class="card-body">
+							<h5 class="card-title">Ração para cães</h5>
+							<p class="card-text">Uma alimentação completa e balanceada com ingredientes de alta qualidade. </p>
+							<p class="card-text"><strong>R$ 50,00</strong></p>
+							<a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>Comprar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-4">
+					<div class="card">
+						<img src="imagens/poco.png" alt="Ração para cães">
+						<div class="card-body">
+							<h5 class="card-title">Ração para cães</h5>
+							<p class="card-text">Uma alimentação completa e balanceada com ingredientes de alta qualidade. </p>
+							<p class="card-text"><strong>R$ 50,00</strong></p>
+							<a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="imagens/pratic.png" alt="Ração para cães">
+						<div class="card-body">
+							<h5 class="card-title">Ração para cães</h5>
+							<p class="card-text">Uma alimentação completa e balanceada com ingredientes de alta qualidade. </p>
+							<p class="card-text"><strong>R$ 50,00</strong></p>
+							<a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="imagens/saudavel.png" alt="Ração para cães">
+						<div class="card-body">
+							<h5 class="card-title">Ração para cães</h5>
+							<p class="card-text">Uma alimentação completa e balanceada com ingredientes de alta qualidade. </p>
+							<p class="card-text"><strong>R$ 50,00</strong></p>
+							<a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>Comprar</a>
+						</div>
+					</div>
+				</div>
+			</div>
         </section>
     </main>
-    <footer>
+    <footer class="mt-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 mb-4  text-center">
-					<h5>Localização</h5>
-					<p>Rua Lorem Ipsum, nº 123</p>
-					<p>Bairro Ipsum</p>
-					<p>Cidade Ipsum</p>
+				<div class="col-md-4 mb-4 text-center">
+					<h2>Contato</h2>
+					<p>Entre em contato conosco para mais informações:</p>
+					
+						<p>Telefone: (11) 5555-5555</p>
+						<p>Email: contato@nomedopetshop.com.br</p>
+						<p>Endereço: Rua do Pet, 123 - São Paulo/SP</p>
+					
 				</div>
 				<div class="col-md-4 mb-4  text-center">
 					<h5>Horários de atendimento</h5>
@@ -96,16 +196,15 @@
 				</div>
 				<div class="col-md-4 mb-4  text-center">
 					<h5>Redes sociais</h5>
-					<ul class="list-unstyled">
-						<li><a href="https://www.linkedin.com/in/thailany-pereira-neves-santos/"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a></li>
-						<li><a href="https://github.com/ThailanyP"><i class="fab fa-github fa-lg"></i> GitHub</a></li>
-                        <li><a href="#"><i class="fab fa-facebook fa-lg"></i> Facebook</a></li>
-						<li><a href="#"><i class="fab fa-instagram fa-lg"></i> Instagram</a></li>
-						<li><a href="#"><i class="fab fa-twitter fa-lg"></i> Twitter</a></li>
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/thailany-pereira-neves-santos/" target="_blank"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a></li>
+						<li class="list-inline-item"><a href="https://github.com/ThailanyP"><i class="fab fa-github fa-lg" target="_blank"></i> GitHub</a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-facebook fa-lg"></i> Facebook</a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-instagram fa-lg"></i> Instagram</a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-twitter fa-lg"></i> Twitter</a></li>
 					</ul>
 				</div>
 			</div>
-		</div>
 	</footer>
 
     <!-- Adicionando o jQuery -->

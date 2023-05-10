@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Nome do Petshop - Página Inicial</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Página Inicial- La Luly</title>
 	<!-- Adicionando CSS do Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<!-- Adicionando nosso próprio arquivo de CSS -->
@@ -11,21 +13,21 @@
 	<header>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Nome do Petshop</a>
+				<a class="navbar-brand fo" href="index.html"><img src="imagens/pawprint.png" alt="logo pata" width="40" height="40"> La Luly</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ml-auto">
+					 <ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
 							<a class="nav-link" href="index.html">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="loja.html">Loja</a>
 						</li>
-						<li class="nav-item active">
+						<li class="nav-item ">
 							<a class="nav-link" href="agendamento.html">Agendamento</a>
-						</li>
+					</li>
 						<li class="nav-item">
 							<a class="nav-link" href="contato.html">Contato</a>
 						</li>
@@ -38,48 +40,98 @@
 		</nav>
 	</header>
 	<main>
-		<section class="jumbotron text-center">
+		<section class="jumbotron text-center" id="banner">
 			<div class="container">
 				<h1>Bem-vindo ao Nome do Petshop</h1>
 				<p class="lead">O lugar ideal para cuidar do seu pet!</p>
 				<a class="btn btn-primary" href="loja.html" role="button">Conheça nossa loja</a>
 			</div>
 		</section>
+	
 		<section class="container">
-			<div class="row">
+			<div class="row offset-md-1">
 				<div class="col-md-6">
-					<img src="img/pet1.jpg" alt="Pet 1" class="img-fluid">
+					<img src="https://via.placeholder.com/300x200" alt="Pet 1" class="img-fluid" width="300" height="200">
 				</div>
 				<div class="col-md-6">
 					<h2>Nossos serviços</h2>
 					<p>Aqui no Nome do Petshop, oferecemos uma ampla variedade de serviços para cuidar do seu pet. Temos banho e tosa, consultas veterinárias, vacinação, hospedagem e muito mais!</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row offset-md-1">
 				<div class="col-md-6">
 					<h2>Nossos produtos</h2>
 					<p>Aqui no Nome do Petshop, você encontra tudo o que precisa para cuidar do seu pet. Temos rações, brinquedos, coleiras, guias, produtos de higiene e muito mais!</p>
 				</div>
 				<div class="col-md-6">
-					<img src="img/pet2.jpg" alt="Pet 2" class="img-fluid">
+					<img src="https://via.placeholder.com/300x200" alt="Pet 2" class="img-fluid" width="300" height="200">
 				</div>
 			</div>
-			<div class="row">
-                <div class="col-md-12">
-					<h2>Nossa equipe</h2>
-					<p>Nossa equipe é formada por veterinários e profissionais apaixonados por animais. Todos estão prontos para atender você e seu pet com carinho e dedicação.</p>
+		</section>
+		<section class="container mt-5">
+			<h2 class="text-center">Nossa Equipe</h2>
+			<div class="offset-md-1">
+				<p class="text-center">Somos equipe muito bem treinada e qualificada, sempre prontos para ajudar e orientar os clientes em relação aos cuidados de seu pet.</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-3 col-sm-6">
+					<div class="member text-center">
+						<img src="imagens/p1.png" alt="Pessoa Feliz" width="300" height="">
+						<h3>Thailany</h3>
+						<p>Ceo</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="member text-center">
+						<img src="imagens/p2.png" alt="Pessoa Feliz" width="300" height="">
+						<h3>Leonardo</h3>
+						<p>Vendedor</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="member text-center">
+						<img src="imagens/p3.png" alt="Pessoa Feliz" width="300" height="">
+						<h3>Maria</h3>
+						<p>Banho e Tosa</p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-3 col-sm-6">
+					<div class="member text-center">
+						<img src="imagens/p4.png" alt="Pessoa Feliz" width="300" height="">
+						<h3>Valentine</h3>
+						<p>Veterinaria</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="member text-center">
+						<img src="imagens/p5.png" alt="Pessoa Feliz" width="300" height="">
+						<h3>Giovanni</h3>
+						<p>Gerente</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="member text-center">
+						<img src="imagens/p6.png" alt="Pessoa Feliz" width="300" height="">
+						<h3>Gabriela</h3>
+						<p>Caixa</p>
+					</div>
 				</div>
 			</div>
 		</section>
 	</main>
-	<footer>
+	<footer class="mt-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 mb-4  text-center">
-					<h5>Localização</h5>
-					<p>Rua Lorem Ipsum, nº 123</p>
-					<p>Bairro Ipsum</p>
-					<p>Cidade Ipsum</p>
+				<div class="col-md-4 mb-4 text-center">
+					<h2>Contato</h2>
+					<p>Entre em contato conosco para mais informações:</p>
+					
+						<p>Telefone: (11) 5555-5555</p>
+						<p>Email: contato@nomedopetshop.com.br</p>
+						<p>Endereço: Rua do Pet, 123 - São Paulo/SP</p>
+					
 				</div>
 				<div class="col-md-4 mb-4  text-center">
 					<h5>Horários de atendimento</h5>
@@ -88,21 +140,21 @@
 				</div>
 				<div class="col-md-4 mb-4  text-center">
 					<h5>Redes sociais</h5>
-					<ul class="list-unstyled">
-						<li><a href="https://www.linkedin.com/in/thailany-pereira-neves-santos/"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a></li>
-						<li><a href="https://github.com/ThailanyP"><i class="fab fa-github fa-lg"></i> GitHub</a></li>
-                        <li><a href="#"><i class="fab fa-facebook fa-lg"></i> Facebook</a></li>
-						<li><a href="#"><i class="fab fa-instagram fa-lg"></i> Instagram</a></li>
-						<li><a href="#"><i class="fab fa-twitter fa-lg"></i> Twitter</a></li>
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/thailany-pereira-neves-santos/" target="_blank"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a></li>
+						<li class="list-inline-item"><a href="https://github.com/ThailanyP"><i class="fab fa-github fa-lg" target="_blank"></i> GitHub</a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-facebook fa-lg"></i> Facebook</a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-instagram fa-lg"></i> Instagram</a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-twitter fa-lg"></i> Twitter</a></li>
 					</ul>
 				</div>
 			</div>
-		</div>
 	</footer>
 
-	<!-- Adicionando o JavaScript do Bootstrap -->
+	<!-- Adicionando jQuery primeiro -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper-base.min.js"></script>
+	<!-- Adicionando JavaScript do Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js/dist/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
